@@ -171,8 +171,8 @@ Remember: Your goal is to solve CTF web challenges efficiently while developing 
 ctf_web_agent = Agent(
     name="CTF Web Challenge Solver",
     instructions=ctf_web_instructions,
-    description="""Advanced CTF web challenge solver specialized in web security vulnerabilities 
-                   and exploit development. Optimized for DeepSeek models with enhanced 
+    description="""Advanced CTF web challenge solver specialized in web security vulnerabilities
+                   and exploit development. Optimized for DeepSeek models with enhanced
                    reasoning capabilities for security analysis.""",
     tools=tools,
     input_guardrails=input_guardrails,
@@ -182,6 +182,12 @@ ctf_web_agent = Agent(
         openai_client=AsyncOpenAI(api_key=api_key),
     )
 )
+
+# Create an alias for backward compatibility and easier access
+rnd_project_agent = ctf_web_agent
+
+# Create another alias for RD_project_agent (with RD instead of R&D)
+RD_project_agent = ctf_web_agent
 
 # Transfer function
 def transfer_to_ctf_web_agent(**kwargs):  # pylint: disable=W0613
