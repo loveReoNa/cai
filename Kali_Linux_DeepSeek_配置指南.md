@@ -94,10 +94,10 @@ git pull origin main
 
 ```bash
 # 创建 Python 3.12 虚拟环境
-python3.12 -m venv cai_env
+python3.12 -m venv venv
 
 # 激活虚拟环境
-source cai_env/bin/activate
+source venv/bin/activate
 
 # 验证环境
 python --version  # 应该显示 Python 3.12.x
@@ -233,7 +233,7 @@ if __name__ == "__main__":
 
 ```bash
 # 确保在虚拟环境中
-source cai_env/bin/activate
+source venv/bin/activate
 
 # 运行测试
 python test_deepseek.py
@@ -336,7 +336,7 @@ python ctf_demo_deepseek.py
 
 ```bash
 # 确保在虚拟环境中且已激活 .env
-source cai_env/bin/activate
+source venv/bin/activate
 source .env
 
 # 启动 CAI
@@ -397,7 +397,7 @@ curl -X POST https://api.deepseek.com/v1/chat/completions \
 **解决**：
 ```bash
 # 确保在虚拟环境中
-source cai_env/bin/activate
+source venv/bin/activate
 
 # 重新安装 CAI
 pip install --force-reinstall cai-framework
@@ -500,7 +500,7 @@ cai
 
 ```bash
 # 环境管理
-source cai_env/bin/activate          # 激活虚拟环境
+source venv/bin/activate          # 激活虚拟环境
 deactivate                          # 退出虚拟环境
 
 # 项目操作

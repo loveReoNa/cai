@@ -24,8 +24,8 @@ If your subscription is active, you have received a confirmation email. Then, ge
 - Open a terminal in that directory.
 - Create a virtual environment, activate it, and install CAI Pro with the following commands:
   - `sudo apt update`
-  - `python3.12 -m venv cai_env`
-  - `source cai_env/bin/activate`
+  - `python3.12 -m venv venv`
+  - `source venv/bin/activate`
   - `pip install --index-url https://packages.aliasrobotics.com:664/<api-key>/ cai-framework`
 - Important note:
   - The last command requires customization. Replace `<api-key>` with the API Key provided in the confirmation email for your subscription, for example: `sk--xxxxxxxxxxxxxxxx`
@@ -55,10 +55,10 @@ brew update && \
 brew install git python@3.12
 
 # Create virtual environment
-python3.12 -m venv cai_env
+python3.12 -m venv venv
 
 # Install the package from the local directory
-source cai_env/bin/activate && pip install cai-framework
+source venv/bin/activate && pip install cai-framework
 
 # Generate a .env file and set up with defaults
 echo -e 'OPENAI_API_KEY="sk-1234"\nANTHROPIC_API_KEY=""\nOLLAMA=""\nPROMPT_TOOLKIT_NO_CPR=1\nCAI_STREAM=false' > .env
@@ -78,10 +78,10 @@ sudo apt-get update && \
 sudo apt-get install -y git python3-pip python3-venv
 
 # Create the virtual environment
-python3 -m venv cai_env
+python3 -m venv venv
 
 # Install the package from the local directory
-source cai_env/bin/activate && pip install cai-framework
+source venv/bin/activate && pip install cai-framework
 
 # Generate a .env file and set up with defaults
 echo -e 'OPENAI_API_KEY="sk-1234"\nANTHROPIC_API_KEY=""\nOLLAMA=""\nPROMPT_TOOLKIT_NO_CPR=1\nCAI_STREAM=false' > .env
@@ -123,10 +123,10 @@ sudo make altinstall  # This command takes long to execute
 git clone https://github.com/aliasrobotics/cai && cd cai
 
 # Create virtual environment
-python3.12 -m venv cai_env
+python3.12 -m venv venv
 
 # Install the package from the local directory
-source cai_env/bin/activate && pip3 install -e .
+source venv/bin/activate && pip3 install -e .
 
 # Generate a .env file and set up
 cp .env.example .env  # edit here your keys/models

@@ -1,6 +1,6 @@
 # macOS Files
 .DS_Store
-cai_env/
+venv/
 # Agent Framework Files
 AGENTS.md
 CLAUDE.md

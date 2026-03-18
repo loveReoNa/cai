@@ -366,7 +366,7 @@ echo 'LITELLM_LOCAL_MODEL_COST_MAP="true"' >> .env
 echo 'CAI_NETWORK_TIMEOUT=30' >> .env
 
 # 重新启动
-source cai_env/bin/activate
+source venv/bin/activate
 source .env
 cai
 ```

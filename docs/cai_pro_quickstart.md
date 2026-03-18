@@ -51,13 +51,13 @@ sudo apt update
 3. **Create a Python virtual environment:**
 
 ```bash
-python3.12 -m venv cai_env
+python3.12 -m venv venv
 ```
 
 4. **Activate the virtual environment:**
 
 ```bash
-source cai_env/bin/activate
+source venv/bin/activate
 ```
 
 5. **Install CAI PRO from private package repository:**

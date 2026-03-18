@@ -9,7 +9,7 @@
 cd ~/cai
 
 # 激活虚拟环境
-source cai_env/bin/activate
+source venv/bin/activate
 
 # 设置环境变量（禁用价格检查警告）
 export CAI_DISABLE_PRICE_CHECK="true"
@@ -103,7 +103,7 @@ cai --continue --prompt "测试 http://testphp.vulnweb.com 的SQL注入漏洞"
 ```bash
 #!/bin/bash
 cd ~/cai
-source cai_env/bin/activate
+source venv/bin/activate
 export CAI_DISABLE_PRICE_CHECK="true"
 cai --continue --prompt "扫描 $1 并找出flag"
 ```
@@ -146,7 +146,7 @@ done
 ```bash
 # 终端1：启动CAI
 cd ~/cai
-source cai_env/bin/activate
+source venv/bin/activate
 cai
 
 # 在CAI交互界面中：

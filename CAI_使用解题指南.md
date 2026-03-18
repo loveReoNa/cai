@@ -26,10 +26,10 @@ CAI 基于8大支柱构建：
 pip install cai-framework
 
 # 创建虚拟环境（推荐）
-python3.12 -m venv cai_env
-source cai_env/bin/activate  # Linux/Mac
+python3.12 -m venv venv
+source venv/bin/activate  # Linux/Mac
 # 或
-cai_env\Scripts\activate     # Windows
+venv\Scripts\activate     # Windows
 
 # 安装CAI
 pip install cai-framework
