@@ -398,55 +398,10 @@ def display_quick_guide(console: Console):
         ("• Use $ prefix for quick shell: $ ls\n", "dim"),
     )
     
-    # Create additional tips panels
-    ollama_tip = Panel(
-        "To use Ollama models, configure OLLAMA_API_BASE\n"
-        "before startup.\n\n"
-        "Default: host.docker.internal:8000/v1",
-        title="[bold yellow]Ollama Configuration[/bold yellow]",
-        border_style="yellow",
-        padding=(1, 2),
-        title_align="center"
-    )
-    
-    # Simplified privacy notice
-    privacy_notice = Text.assemble(
-        ("CAI collects pseudonymized data to improve our research.\n"
-         "Your privacy is protected in compliance with GDPR.\n"
-         "Continue to start, or press Ctrl-C to exit.", "yellow"), "\n\n",
-    )
-    
-    context_tip = Panel(
-        Text.assemble(
-            ("🔒 Security-Focused AI Framework\n\n", "bold white"),
-            "For optimal cybersecurity AI performance, use\n", 
-            ("alias1", "bold green"), 
-            " - specifically designed for cybersecurity\n"
-            "tasks with superior domain knowledge.\n\n",
-            ("alias1", "bold green"), 
-            " outperforms general-purpose models in:\n",
-            "• Vulnerability assessment\n",
-            "• Penetration testing and bug bounty\n",
-            "• Security analysis\n",
-            "• Threat detection\n\n",
-            "Learn more about ", 
-            ("alias1", "bold green"), 
-            " and its privacy-first approach:\n",
-            ("https://news.aliasrobotics.com/alias1-a-privacy-first-cybersecurity-ai/", "blue underline")
-        ),
-        title="[bold yellow]🛡️ Alias1 - best model for cybersecurity [/bold yellow]",
-        border_style="yellow",
-        padding=(1, 2),
-        title_align="center"
-    )
-    # Combine tips into a group
-    # tips_group = Group(ollama_tip, context_tip, privacy_notice)
-    tips_group = Group(context_tip)
-    
-    # Create a three-column panel layout
+    # Create a two-column panel layout (removed third column)
     console.print(Panel(
         Columns(
-            [help_text, config_text, tips_group],
+            [help_text, config_text],
             column_first=True,
             expand=True,
             align="center"
