@@ -180,7 +180,7 @@ def display_banner(console: Console):
 [bold blue]             CCC::::::::::::C             +++++             I::::::::I
 [bold blue]                CCCCCCCCCCCCC               ++              IIIIIIIIII
 
-[bold blue]                              Cybersecurity AI (CAI), v{version}[/bold blue]
+[bold blue]                              Cybersecurity AI (AC), v{version}[/bold blue]
 [white]                                  Bug bounty-ready AI[/white]
     """
 
@@ -234,7 +234,7 @@ def display_framework_capabilities(console: Console):
     # Add the table to a panel for better visual separation
     capabilities_panel = Panel(
         table,
-        title="[bold blue]CAI Features[/bold blue]",
+        title="[bold blue]AC Features[/bold blue]",
         border_style="blue",
         padding=(1, 2)
     )
@@ -322,7 +322,7 @@ def display_quick_guide(console: Console):
     from rich.console import Group  # <-- Fix: import Group
 
     help_text = Text.assemble(
-        ("CAI Command Reference", "bold cyan underline"), "\n\n",
+        ("AC Command Reference", "bold cyan underline"), "\n\n",
         ("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━", "dim"), "\n",
         ("AGENT MANAGEMENT", "bold yellow"), " (/a)\n",
         ("  CAI>/agent list", "green"), " - List all available agents\n",

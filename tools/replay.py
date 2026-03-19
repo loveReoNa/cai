@@ -261,7 +261,7 @@ def replay_conversation(messages: List[Dict], replay_delay: float = 0.5, usage: 
             
             # Handle user messages
             if role == "user":
-                print(color(f"CAI> ", fg="cyan") + f"{content}")
+                print(color(f"AC> ", fg="cyan") + f"{content}")
                 turn_counter += 1
                 # Don't reset interaction_counter to maintain numbering across user prompts
             
